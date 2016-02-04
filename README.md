@@ -11,6 +11,7 @@ This method is used to determine the onscreen size of text given a specified sty
 Expected parameters are:
 
 **text** - this is the text we're checking the size of.
+
 **className** - this is the css class we're using to determine the size.
 
 In CoffeeScript, the usage would be:
@@ -38,12 +39,13 @@ textSize = window.SizeMatters.howBigWillThisBe(howBigOptions)
 This method will return a substring of text that will fit in a specified object. The intent of this is to create intelligent excerpt lengths. CSS has text-overflow, but it yields inconsistent results.
 
 Expected parameters are:
+
   **text** -  either as a string as the first params or as a param of a has passed as the first param
 
   **className** - this is the css class used for size calculation.
 
-  **width**
-  **height** - size of text area (if you want to specify this without referencing an on-screen element's size)
+  **width**, **height** - size of text area (if you want to specify this without referencing an on-screen element's size)
+  
   **target** - DOM reference to extract height and width from (if you want to check an existing on-screen element's size)
 
 In CoffeeScript, the usage would be:
