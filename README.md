@@ -14,21 +14,25 @@ Expected parameters are:
 **className** - this is the css class we're using to determine the size.
 
 In CoffeeScript, the usage would be:
-```howBigOptions =
+```
+howBigOptions =
   text: 'This is my text.'
   className: 'myClass'
 
-textSize = window.SizeMatters.howBigWillThisBe howBigOptions```
+textSize = window.SizeMatters.howBigWillThisBe howBigOptions
+```
 
 This returns an object with the properties height and width.
 
 In JavaScript, the usage would be:
-```var howBigOptions = {
+```
+var howBigOptions = {
   text: 'This is my text.',
   className: 'myClass'
 };
 
-textSize = window.SizeMatters.howBigWillThisBe(howBigOptions)```
+textSize = window.SizeMatters.howBigWillThisBe(howBigOptions)
+```
 
 ## howMuchWillFit
 This method will return a substring of text that will fit in a specified object. The intent of this is to create intelligent excerpt lengths. CSS has text-overflow, but it yields inconsistent results.
@@ -43,18 +47,22 @@ Expected parameters are:
   **target** - DOM reference to extract height and width from (if you want to check an existing on-screen element's size)
 
 In CoffeeScript, the usage would be:
-```params =
+```
+params =
   text: fitTestText
   target: $("#fit-test")
   className: "fit-test"
 
-$("#fit-test").html(sizeMatters.howMuchWillFit(params))```
+$("#fit-test").html(sizeMatters.howMuchWillFit(params))
+```
 
 In JavaScript, the usage would be:
-```var params = {
+```
+var params = {
   text: fitTestText,
   target: $("#fit-test"),
   className: "fit-test"
 }
 
-$("#fit-test").html(sizeMatters.howMuchWillFit(params))```
+$("#fit-test").html(sizeMatters.howMuchWillFit(params))
+```
